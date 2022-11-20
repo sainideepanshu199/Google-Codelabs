@@ -1,4 +1,5 @@
 // ignore_for_file: unnecessary_const, prefer_const_constructors
+// basic app for random english word generator
 
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
@@ -80,7 +81,7 @@ class _RandomWordsState extends State<RandomWords> {
               ),
               trailing: Icon(
                 alreadySaved ? Icons.favorite : Icons.favorite_border,
-                color: alreadySaved ? Colors.red : null,
+                color: alreadySaved ? Colors.blue : null,
                 semanticLabel: alreadySaved ? ' Remove from saved' : 'Save',
               ),
               onTap: () {
